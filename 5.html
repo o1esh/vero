@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Задачи</title>
+    <script type="text/javascript">
+    function f(n) {
+        return n ? n * f(n - 1) : 1;
+    }
+    function c(n, k) {
+      return f(n)/(f(k)*f(n-k));
+    }
+
+document.write("5nd zadacha. Otvet= 1 =", 4 / 36,
+"                            2  =", 6 / 36,
+"                            3 =", 1 - (7 / 36) );
+</script>
+
+</html>

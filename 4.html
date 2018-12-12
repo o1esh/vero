@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Zadacha4</title>
+    <script type="text/javascript">
+    function f(n) {
+        return n ? n * f(n - 1) : 1;
+    }
+    function c(n, k) {
+      return f(n)/(f(k)*f(n-k));
+    }
+document.write("4nd zadacha. Otvet= ", 1 / (c(4, 1) * 2));
+</script>
+
+</html>

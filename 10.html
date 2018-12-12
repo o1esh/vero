@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Задачи</title>
+    <script type="text/javascript">
+    function f(n) {
+        return n ? n * f(n - 1) : 1;
+    }
+    function c(n, k) {
+      return f(n)/(f(k)*f(n-k));
+    }
+    function a(n, k) {
+      return f(n)/f(n-k);
+    }
+document.write("10nd. otvet = ", (a(64, 2) - ((a(8, 2) * 8) + (a(8, 2) * 8 ))) / a(64, 2));
+</script>
+</html>
